@@ -8,10 +8,11 @@
             <field name="inherit_id" ref="base.res_config_installer"/>
             <field name="arch" type="xml">
                 <data>
-                    <form position="attributes">
-                        <attribute name="string">Spanish states and cities configuration</attribute>
-                    </form>
+                    <form><!-- position="attributes">
+                       <attribute name="string">Spanish states and cities configuration</attribute>
+
                     <separator string="title" position="replace">
+                        <separator string="title" >
                         <group col="2" colspan="4" string="Select the toponym version of the spanish states">
                             <field name="state"/>
                             <label colspan="2" string="For example: Official (Girona), Spanish (Gerona), Both (Gerona / Girona)" align="0.0"/>
@@ -23,15 +24,17 @@
                             <label colspan="2" string="Warning! Adding this bunch of records can take a lot of time. If you are behind a SSL proxy, check your timeout."/>
                         </group>
                     </separator>
-
-                    <button string="Install Modules" position="after">
+-->
+                    <!--<button string="Install Modules" position="after">-->
                         <button string="Configure from local"
                                 type="object"
                                 name="execute_local" />
-                    </button>
+                    <!--</button>-->
+                        <!--
                     <button string="Install Modules" position="attributes">
                         <attribute name="string">Configure from GeoNames</attribute>
-                    </button>
+                    </button>-->
+                    </form>
                 </data>
             </field>
         </record>
