@@ -49,5 +49,5 @@
     'test': [
         'test/wizard.yml'
     ],
-    'installable': False
+    'installable': True
 }
